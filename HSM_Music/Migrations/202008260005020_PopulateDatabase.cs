@@ -7,6 +7,10 @@ namespace HSM_Music.Migrations
     {
         public override void Up()
         {
+            Sql("Insert INTO MembershipTypes(Id, SignUpFee, DurationInMonths, DiscountRate) Values (0,0,0,0)");
+            Sql("Insert INTO MembershipTypes(Id, SignUpFee, DurationInMonths, DiscountRate) Values (1,30,1,10)");
+            Sql("Insert INTO MembershipTypes(Id, SignUpFee, DurationInMonths, DiscountRate) Values (2,90,3,15)");
+            Sql("Insert INTO MembershipTypes(Id, SignUpFee, DurationInMonths, DiscountRate) Values (3,300,12,20)");
         }
         
         public override void Down()

@@ -1,0 +1,36 @@
+﻿@model IEnumerable<HSM_Music.Models.Customers>
+@{
+    ViewBag.Title = "Customer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2></h2>
+@if (!Model.Any())
+{
+    <p> We do not any customer yet</p>
+}
+
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th> Customers</th>
+                <th> Membership Name</th>
+            </tr>
+            
+
+        </thead>
+        <tbody>
+            @foreach( var customer in Model)
+            {
+                <tr>
+                    <td> @Html.ActionLink(customer.Name, "Details", "Customers", new { id= customer.Id}, null)</td>
+                    <td> @customer.MembershipType</td>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+}

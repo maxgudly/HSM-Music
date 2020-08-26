@@ -191,6 +191,10 @@
     <Compile Include="Migrations\202008260005020_PopulateDatabase.Designer.cs">
       <DependentUpon>202008260005020_PopulateDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202008260027392_ApplyAnnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\202008260027392_ApplyAnnotationsToCustomerName.Designer.cs">
+      <DependentUpon>202008260027392_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customers.cs" />
@@ -260,10 +264,11 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
+    <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Customers\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Customers\" />
     <Folder Include="Views\Movies\" />
   </ItemGroup>
   <ItemGroup>
@@ -291,6 +296,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202008260005020_PopulateDatabase.resx">
       <DependentUpon>202008260005020_PopulateDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008260027392_ApplyAnnotationsToCustomerName.resx">
+      <DependentUpon>202008260027392_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
