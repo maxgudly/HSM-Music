@@ -183,6 +183,14 @@
     <Compile Include="Migrations\202008252340063_InitialModel1.Designer.cs">
       <DependentUpon>202008252340063_InitialModel1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202008252356063_InitialModel2.cs" />
+    <Compile Include="Migrations\202008252356063_InitialModel2.Designer.cs">
+      <DependentUpon>202008252356063_InitialModel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202008260005020_PopulateDatabase.cs" />
+    <Compile Include="Migrations\202008260005020_PopulateDatabase.Designer.cs">
+      <DependentUpon>202008260005020_PopulateDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customers.cs" />
@@ -277,6 +285,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202008252340063_InitialModel1.resx">
       <DependentUpon>202008252340063_InitialModel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008252356063_InitialModel2.resx">
+      <DependentUpon>202008252356063_InitialModel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008260005020_PopulateDatabase.resx">
+      <DependentUpon>202008260005020_PopulateDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

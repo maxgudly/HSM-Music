@@ -8,6 +8,7 @@ namespace HSM_Music.Controllers
 {
     public class MoviesController : Controller
     {
+        
         // GET: Movies
         public ActionResult Index()
         {
