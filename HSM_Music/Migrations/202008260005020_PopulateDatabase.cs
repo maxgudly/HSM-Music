@@ -15,6 +15,7 @@ namespace HSM_Music.Migrations
         
         public override void Down()
         {
+          
         }
     }
 }
