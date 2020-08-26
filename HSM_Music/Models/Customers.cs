@@ -12,6 +12,7 @@ namespace HSM_Music.Models
         [Required]
         [StringLength(255)]
         public string Name { get; set; }
+        public DateTime? BirthDate { get; set; }
 
         public bool isSubscribedToNewsletter { get; set; }
         public MembershipType MembershipType { get; set; }

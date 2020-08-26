@@ -12,5 +12,7 @@ namespace HSM_Music.Models
         public DateTime DateAdded { get; set; }
         public DateTime ReleaseDate { get; set; }
         public byte NumberInStock { get; set; }
+        public Genre GenreName { get; set; }
+        public byte GenreId { get; set; }
     }
 }
