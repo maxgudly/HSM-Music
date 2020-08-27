@@ -26,7 +26,7 @@ namespace HSM_Music.Controllers
         {
             var movies = _context.Movies.Include(m=>m.Genre).ToList(); 
 
-            return View();
+            return View(movies);
         }
 
         public ActionResult Details(int id)

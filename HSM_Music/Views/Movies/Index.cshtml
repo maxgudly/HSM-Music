@@ -1,37 +1,35 @@
-﻿@model IEnumerable<HSM_Music.Models.Movies>
-@{
-    ViewBag.Title = "Index";
+﻿@model IEnumerable< HSM_Music.Models.Movies>
+
+@{ 
+    ViewBag.Title = "Model.Name ";
+
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@if(!Model.Any())
+@if (!Model.Any())
 {
-    <p> there are no movies  yet </p>
+    <p> There are no movies at this time</p>
 }
-
-
 else
 {
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
                 <th> Movies</th>
-                <th> Genre</th>
+                <th>Genre</th>
             </tr>
-
-
+            
         </thead>
         <tbody>
-            @foreach (var movies in Model)
+            @foreach(var movies in Model)
             {
                 <tr>
-                    <td>@movies.Name</td>
-                    <td> @Html.ActionLink(movies.Name, "Details", "Customers", new { id = movies.Id }, null)</td>
-                    <td> @movies.Genre.GenreName</td>
+                    <td>@Html.ActionLink(movies.Name, "Details", "Movies", new { id = movies.Id }, null)</td>
+                    <td>@movies.Genre.Name</td>
                 </tr>
-
             }
-
         </tbody>
+        
     </table>
+
 }

@@ -227,6 +227,14 @@
     <Compile Include="Migrations\202008261652416_MoviesAnnotoations.Designer.cs">
       <DependentUpon>202008261652416_MoviesAnnotoations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202008271922336_MovieDateTimeNullable.cs" />
+    <Compile Include="Migrations\202008271922336_MovieDateTimeNullable.Designer.cs">
+      <DependentUpon>202008271922336_MovieDateTimeNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202008271929412_CorrectingMovieDB.cs" />
+    <Compile Include="Migrations\202008271929412_CorrectingMovieDB.Designer.cs">
+      <DependentUpon>202008271929412_CorrectingMovieDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customers.cs" />
@@ -358,6 +366,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202008261652416_MoviesAnnotoations.resx">
       <DependentUpon>202008261652416_MoviesAnnotoations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008271922336_MovieDateTimeNullable.resx">
+      <DependentUpon>202008271922336_MovieDateTimeNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008271929412_CorrectingMovieDB.resx">
+      <DependentUpon>202008271929412_CorrectingMovieDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

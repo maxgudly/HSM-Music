@@ -13,6 +13,6 @@ namespace HSM_Music.Models
 
         [Required]
         [StringLength(255)]
-        public string GenreName { get; set; }
+        public string Name { get; set; }
     }
 }
