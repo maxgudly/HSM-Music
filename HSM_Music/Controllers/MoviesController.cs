@@ -1,4 +1,5 @@
 ﻿using HSM_Music.Models;
+using System.Data.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,13 +24,15 @@ namespace HSM_Music.Controllers
         // GET: Movies
         public ActionResult Index()
         {
-            var movies = _context.Movies; 
+            var movies = _context.Movies.Include(m=>m.Genre).ToList(); 
+
             return View();
         }
 
         public ActionResult Details(int id)
         {
-            var movie = _context.Movies.SingleOrDefault(c=>c.Id == id);
+            var movie = _context.Movies.Include(m=>m.Genre).SingleOrDefault(m=>m.Id == id);
+
             if (movie == null)
                 return HttpNotFound();
 
